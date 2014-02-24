@@ -67,8 +67,9 @@ h2, h3, h4, h5, h6 {
 	color: #6F8531;
 	}
 	
-h1 {font-size: 15px;
-color: #d77b28;
+h1.title {
+	font-size: 1.05em; 
+	color: #D77B28;
 }	
 	
 h2, .title {
@@ -391,12 +392,8 @@ td.timelineSections {
 	line-height: 0;
 	}
 	
-h1 {
-	color:#D77B28;
-	font-size: 1.05em; 
-	}
-	
-#center .content {
+
+#content {
 	font-size: .75em;
 	color: #555753;
 	}
