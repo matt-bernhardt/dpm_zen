@@ -1,3 +1,24 @@
+/* ############################################################################
+###############################################################################
+###
+### Link debugging highlights
+#*/
+
+body.logged-in a[href*=".."],
+body.logged-in a[href^="http://dpworkshop"] {
+	border: 3px solid red;
+}
+
+body.logged-in a[href^="http://www.icpsr.umich.edu/dpm"] {
+	border: 3px solid blue;
+}
+
+/* ############################################################################
+###############################################################################
+###
+### Body
+#*/
+
 body {
   margin: 0;
   padding: 0;
@@ -432,12 +453,16 @@ td.timelineSections {
 ul.nice-menu li {
 	background: none;
 	border:none;
-	font-size: 85%;
+	font-size: 13px;
 	padding: 7px 0;
 	}
 	
 ul.nice-menu a {
 	padding: 0;
+	}
+
+ul.nice-menu .menu__link {
+	color: #336;
 	}
 	
 ul.nice-menu, ul.nice-menu ul {
@@ -446,7 +471,7 @@ ul.nice-menu, ul.nice-menu ul {
 	}
 	
 ul.nice-menu ul {
-	background: #fff;
+	background: #f7f6f4;
 	padding: 8px 5px;
 	border: 1px solid #6F8531;
 	}
@@ -458,15 +483,16 @@ ul.nice-menu li a:visited {
 
 ul.nice-menu ul li a:link,
 ul.nice-menu ul li a:visited {
-	color: #003399;
+	/* color: #003399; */
 	font-weight: normal;
-	font-size: 125%;
+	padding-right: 4px;
+	/* font-size: 125%; */
 	}
 	
 ul.nice-menu-right ul,
 ul.nice-menu-right ul li, 
 ul.nice-menu-left ul li {
-	width: 17em;
+	min-width: 17em;
 	padding: 4px;
 	line-height: 1;
 	}
