@@ -1,16 +1,18 @@
 function windowOpener(url,name,args) {
-if (typeof(popupWin) != "object"){
-popupWin = window.open(url,name,args);
-} else {
-if (!popupWin.closed){
-popupWin.location.href = url;
-} else {
-popupWin = window.open(url,name,args);
-}
-}
-popupWin.focus();
+    if (typeof(popupWin) != "object"){
+        popupWin = window.open(url,name,args);
+    } else {
+        if (!popupWin.closed){
+            popupWin.location.href = url;
+        } else {
+            popupWin = window.open(url,name,args);
+        }
+    }
+    popupWin.focus();
 }
 
+/* Disabled functions that shouldn't be necessary */
+/*
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
@@ -28,36 +30,34 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 
-function openpopupQuizEng(){
-var popurl="/sites/default/files/quiz-eng.html"
-winpops=window.open(popurl,"","width=600,height=700,")
-}
-
-function openpopupQuizFre(){
-var popurl="/sites/default/files/quiz-fre.html"
-winpops=window.open(popurl,"","width=600,height=700,")
-}
-
-function openpopupQuizIta(){
-var popurl="/sites/default/files/quiz-ita.html"
-winpops=window.open(popurl,"","width=600,height=700,")
-}
-
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
+*/
 
+function openpopupQuizEng(){
+    var popurl="/sites/default/files/quiz-eng.html"
+    winpops=window.open(popurl,"","width=600,height=700,")
+}
 
+function openpopupQuizFre(){
+    var popurl="/sites/default/files/quiz-fre.html"
+    winpops=window.open(popurl,"","width=600,height=700,")
+}
 
-
-
+function openpopupQuizIta(){
+    var popurl="/sites/default/files/quiz-ita.html"
+    winpops=window.open(popurl,"","width=600,height=700,")
+}
 
 var activeSub=0;
 var SubNum=0;
 
-function reDo(){ window.location.reload() }
+function reDo(){ 
+    // window.location.reload() 
+}
     window.onresize = reDo;
 
 
